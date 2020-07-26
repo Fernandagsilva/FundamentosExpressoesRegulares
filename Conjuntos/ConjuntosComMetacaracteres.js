@@ -1,0 +1,7 @@
+const texto = ".$+*?-";
+
+console.log(texto.match(/[.?]/g)); // não precisa de escape dentro do conjunto
+console.log(texto.match(/[$-?]/g)); //esse é um intervalo válido
+console.log(texto.match(/[$?-]/g));
+
+// pode precisar de escape dentro do conjunto: - [ ] ^
